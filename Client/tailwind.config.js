@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily:{
         source:['source-serif-pro', 'serif'],
-        libre:['libre-franklin', 'sans-serif']
+        libre:['libre-franklin', 'sans-serif'],
+        averia:['Averia Serif Libre', 'serif']
       },
       fontSize: {
         'pp-5xl': '46px',
