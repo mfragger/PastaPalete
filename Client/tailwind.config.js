@@ -3,10 +3,22 @@ module.exports = {
   content: ["./**/*.{razor,html,cshtml}"],
   theme: {
     extend: {
+      height: {
+        '26rem':'26rem',
+        '28rem':'28rem',
+      },
+      width:{
+        '440px' : '440px',
+        '460px' : '460px',
+      },
+      objectPosition: {
+        'center-n48px': 'center -48px',
+      },
       fontFamily:{
         source:['source-serif-pro', 'serif'],
         libre:['libre-franklin', 'sans-serif'],
-        averia:['Averia Serif Libre', 'serif']
+        averia:['Averia Serif Libre', 'serif'],
+        work: ['Work Sans', 'sans-serif'],
       },
       fontSize: {
         'pp-5xl': '46px',
@@ -17,6 +29,7 @@ module.exports = {
         'pp-l': '18px',
         'pp-base': '16px',
         'pp-sm':'12px',
+        'pp-xsm': '10px',
       },
       screens: {
           'xsm' : '533px',

@@ -1,11 +1,12 @@
-﻿@inherits LayoutComponentBase
+﻿@using PastaPalete.Client.Components;
+@inherits LayoutComponentBase;
 
 <div class="flex-col w-full">
     <div class="flex flex-col">
-        <div class="w-full font-normal text-center text-white bg-pasta-palete-black font-source text-pp-5xl">
+        <div class="w-full font-normal text-center text-white bg-black font-source text-pp-5xl">
             Pasta Palete
         </div>
-        <div class="flex justify-center w-full text-white font-extralight font-libre bg-pasta-palete-black text-pp-sm">
+        <div class="flex justify-center w-full text-white font-extralight font-libre bg-black text-pp-sm">
             <NavLink class="p-4 hover:bg-black" href="/" Match=@(NavLinkMatch.All) ActiveClass="text-pasta-palete-yellow-2">
                 Home
             </NavLink>
@@ -15,6 +16,9 @@
             <NavLink class="p-4 hover:bg-black" href="cooking" ActiveClass="text-pasta-palete-yellow-2">
                 Cooking
             </NavLink>
+            <NavLink class="p-4 hover:bg-black" href="cooking" ActiveClass="text-pasta-palete-yellow-2">
+                Culture
+            </NavLink>
             <NavLink class="p-4 hover:bg-black" href="contact" ActiveClass="text-pasta-palete-yellow-2">
                 Contact
             </NavLink>
@@ -23,5 +27,8 @@
     <main>
         @Body
     </main>
+    <div class="bg-black">
+        <Footer />
+    </div>
 </div>
 

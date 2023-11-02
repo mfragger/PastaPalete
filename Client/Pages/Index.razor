@@ -1,22 +1,77 @@
-﻿@page "/"
+﻿@using Components;
+
+@page "/"
 
 <div class="flex flex-col w-full text">
-    <div class="w-full odd:text-black odd:bg-pasta-palete-yellow">
-        WOW
+    <div class="flex flex-col w-full bg-pasta-palete-yellow pb-7">
+        <div class="w-full py-5 text-center font-source text-pp-4xl">
+            Featured Recipe
+        </div>
+        <div class="flex px-10 divide-x-2 divide-black">
+            <div class="flex flex-col pr-4">
+                <PastaPalete.Client.Components.FeaturedSmall />
+                <PastaPalete.Client.Components.FeaturedSmall />
+            </div>
+            <PastaPalete.Client.Components.FeaturedBig />
+            <div class="flex flex-col pl-4">
+                <PastaPalete.Client.Components.FeaturedSmall />
+                <PastaPalete.Client.Components.FeaturedSmall />
+            </div>
+        </div>
     </div>
-    <div class="w-full odd:text-black odd:bg-pasta-palete-yellow">
-        WOW
+    <div class="flex w-full p-10 bg-black divide-x-2 divide-white">
+        <div class="flex flex-col flex-1 pr-5 space-y-2">
+            <img src="images/Body2/rc-cf-FMh5o5m5N9E-unsplash.jpg" class="object-cover w-auto object-center-n48px h-28rem">
+            <label class="text-yellow-200">Read Chef Lorem</label>
+            <label class="font-bold text-white text-pp-4xl">Title</label>
+        </div>
+        <div class="flex flex-col flex-1 pl-5 space-y-2">
+            <img src="images/Body2/rc-cf-FMh5o5m5N9E-unsplash.jpg" class="object-cover object-top w-auto h-64">
+            <img src="images/Body2/rc-cf-FMh5o5m5N9E-unsplash.jpg" class="object-cover object-top w-auto h-64">
+        </div>
     </div>
-    <div class="w-full odd:text-black odd:bg-pasta-palete-yellow">
-        WOW
-    </div>
-    <div class="w-full odd:text-black odd:bg-pasta-palete-yellow">
-        WOW
-    </div>
-    <div class="w-full odd:text-black odd:bg-pasta-palete-yellow">
-        WOW
-    </div>
-    <div class="w-full odd:text-black odd:bg-pasta-palete-yellow">
-        WOW
+    <div class="flex flex-col w-full pb-10 bg-white">
+        <div class="w-full py-5 text-center font-source text-pp-4xl">
+            Editor's Picks
+        </div>
+        <div class="flex justify-center px-10 space-x-5">
+            <div class="flex flex-col">
+                <img src="images/Body3/aleksandra-tanasiienko-0y6eMd8vevA-unsplash.jpg" class="object-cover rounded-lg h-26rem">
+                <span class="font-semibold text-pp-3xl">
+                    Lorem ipsum dolor
+                </span>
+            </div>
+            <div class="flex flex-col">
+                <img src="images/Body3/aleksandra-tanasiienko-0y6eMd8vevA-unsplash.jpg" class="object-cover rounded-lg h-26rem">
+                <span class="font-semibold text-pp-3xl">
+                    Lorem ipsum dolor
+                </span>
+            </div>
+            <div class="flex flex-col">
+                <img src="images/Body3/aleksandra-tanasiienko-0y6eMd8vevA-unsplash.jpg" class="object-cover rounded-lg h-26rem">
+                <span class="font-semibold text-pp-3xl">
+                    Lorem ipsum dolor
+                </span>
+            </div>
+            <div class="flex flex-col">
+                <img src="images/Body3/aleksandra-tanasiienko-0y6eMd8vevA-unsplash.jpg" class="object-cover rounded-lg h-26rem">
+                <span class="font-semibold text-pp-3xl">
+                    Lorem ipsum dolor
+                </span>
+            </div>
+            <div class="flex flex-col">
+                <img src="images/Body3/aleksandra-tanasiienko-0y6eMd8vevA-unsplash.jpg" class="object-cover rounded-lg h-26rem">
+                <span class="font-semibold text-pp-3xl">
+                    Lorem ipsum dolor
+                </span>
+            </div>
+            <div class="flex flex-col">
+                <img src="images/Body3/aleksandra-tanasiienko-0y6eMd8vevA-unsplash.jpg" class="object-cover rounded-lg h-26rem">
+                <span class="font-semibold text-pp-3xl">
+                    Lorem ipsum dolor
+                </span>
+            </div>
+           
+        </div>
     </div>
 </div>
