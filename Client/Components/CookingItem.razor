@@ -1,0 +1,25 @@
+<div class="flex flex-col flex-grow w-full space-y-2">
+    <img src="@(ImgSrc)" class="object-cover w-full h-80">
+    <span>@Title</span>
+    <p>@Summary</p>
+    <div class="flex flex-wrap w-full">
+        @for (int i = 0; i <= Rating; i++)
+        {
+            <i class='bx bxs-star' />
+        }    
+    </div>
+</div>
+
+@code {
+    [Parameter, EditorRequired]
+    public string? ImgSrc { get; set; }
+
+    [Parameter, EditorRequired]
+    public string? Title { get; set; }
+
+    [Parameter, EditorRequired]
+    public string? Summary { get; set; }
+
+    [Parameter, EditorRequired]
+    public int Rating { get; set; }
+}

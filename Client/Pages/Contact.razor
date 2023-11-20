@@ -1,1 +1,55 @@
+@using Microsoft.AspNetCore.Components.Forms;
+@using PastaPalete.Client.Components
+
 @page "/contact"
+
+<div class="flex flex-col px-10 divide-black divide-y-1 ">
+    <Subtitle SubHeader="Contact" />
+    <div class="flex justify-center py-16">
+        <img src="images/Contact/pexels-cinematic-camp-15086644.jpg" class="object-cover object-center w-480px h-675px">
+        <div class="flex flex-col self-center h-full p-20 divide-black divide-y-1 divide-border">
+            <div class="flex flex-col space-y-4">
+                <div class="flex flex-col">
+                    <label class="font-semibold font-source text-pp-xl">Address</label>
+                    <p class="text-pp-l font-source">5/F Corinthian Plaza Paseo De Roxas Street Legaspi Village 1200</p>
+                </div>
+                <div class="flex flex-col">
+                    <label class="font-semibold font-source text-pp-xl">Email</label>
+                    <p class="text-pp-l font-source">inquire@pastapalete.com</p>
+                </div>
+            </div>
+            <div class="flex flex-col justify-end space-y-2 grow">
+                <div class="w-full font-normal font-source text-pp-3xl">
+                    Follow us on
+                </div>
+                <Socials AdditionalCss="text-black" IsInvert=@(true) />
+            </div>
+        </div>
+    </div>
+    <EditForm Model=@(suggestionModel) class="flex justify-center flex-1 w-full py-16">
+        <div class="flex flex-col w-full px-12 space-y-10">
+            <span class="font-averia text-pp-xl">Suggestion Box</span>
+            <div class="flex space-x-4">
+                <div class="flex flex-col flex-1">
+                    <label class="font-source text-pp-l">Name</label>
+                    <InputText @bind-Value=@(suggestionModel.Name)  class="border-black border-b-1"  />
+                </div>
+                <div class="flex flex-col flex-1">
+                    <label class="font-source text-pp-l">Email</label>
+                    <InputText @bind-Value=@(suggestionModel.Email) class="border-black border-b-1" />
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <label class="font-source text-pp-l">Message</label>
+                <InputText @bind-Value=@(suggestionModel.Message) class="border-black border-b-1"/>
+            </div>
+            <div class="flex justify-end">
+                <button class="text-white bg-pasta-palete-black w-14">Send</button>
+            </div>
+        </div>
+    </EditForm>
+</div>
+
+@code {
+    private SuggestionModel? suggestionModel = new();
+}

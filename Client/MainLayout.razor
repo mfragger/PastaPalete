@@ -2,27 +2,30 @@
 @inherits LayoutComponentBase;
 
 <div class="flex-col w-full">
-    <div class="flex flex-col">
-        <div class="w-full font-normal text-center text-white bg-black font-source text-pp-5xl">
-            Pasta Palete
-        </div>
-        <div class="flex justify-center w-full text-white font-extralight font-libre bg-black text-pp-sm">
-            <NavLink class="p-4 hover:bg-black" href="/" Match=@(NavLinkMatch.All) ActiveClass="text-pasta-palete-yellow-2">
+    <div class="relative flex flex-col">
+        <Title AdditionalCss="text-pp-5xl text-center"/>
+        <div class="flex justify-center w-full text-white bg-black font-extralight font-libre text-pp-sm">
+            <NavLink class="p-4 hover:bg-black" href="/" Match=@(NavLinkMatch.All)
+                ActiveClass="text-pasta-palete-yellow-2">
                 Home
             </NavLink>
             <NavLink class="p-4 hover:bg-black" href="about" ActiveClass="text-pasta-palete-yellow-2">
                 About
             </NavLink>
-            <NavLink class="p-4 hover:bg-black" href="cooking" ActiveClass="text-pasta-palete-yellow-2">
+            <NavLink class="p-4 hover:bg-black" href="cooking" ActiveClass="text-pasta-palete-yellow-2" @onmouseover=@(() => { toShowCookingNavigation = true; }) @onmouseleave=@(() => { toShowCookingNavigation = false; })>
                 Cooking
             </NavLink>
-            <NavLink class="p-4 hover:bg-black" href="cooking" ActiveClass="text-pasta-palete-yellow-2">
+            <NavLink class="p-4 hover:bg-black" href="culture" ActiveClass="text-pasta-palete-yellow-2">
                 Culture
             </NavLink>
             <NavLink class="p-4 hover:bg-black" href="contact" ActiveClass="text-pasta-palete-yellow-2">
                 Contact
             </NavLink>
         </div>
+        @if (toShowCookingNavigation)
+        {
+            <CookingNavigation/>
+    }
     </div>
     <main>
         @Body
@@ -32,3 +35,7 @@
     </div>
 </div>
 
+
+@code {
+    private bool toShowCookingNavigation { get; set; }
+}

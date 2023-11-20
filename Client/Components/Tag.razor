@@ -1,0 +1,12 @@
+<button class="text-white bg-pasta-palete-black w-14 @Class">
+    @TagName
+</button>
+
+@code {
+    [Parameter, EditorRequired]
+    public string? TagName { get; set; }
+
+    [Parameter]
+    public string? Class { get; set; }
+
+}
