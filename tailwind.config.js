@@ -10,12 +10,14 @@ module.exports = {
         '26rem':'26rem',
         '28rem':'28rem',
         '32rem':'32rem',
+        '300px':'300px',
         '611px':'611px',
         '675px': '675px'
       },
       width:{
         '400px':'400px',
         '440px' : '440px',
+        '450px' : '450px',
         '460px' : '460px',
         '480px' : '480px',
       },
@@ -23,7 +25,7 @@ module.exports = {
         'center-n48px': 'center -48px',
         'center-n225px': 'center -225px',
         'center-n300px': 'center -300px',
-        'bottom-p48px': 'bottom 48px'
+        'bottom-p30px': 'bottom 30px'
       },
       fontFamily:{
         source:['source-serif-pro', 'serif'],
@@ -53,7 +55,8 @@ module.exports = {
         '100px': '100px'
       },
       spacing: {
-        '1px': '1px'
+        '1px': '1px',
+        '28px': '28px'
       },
       colors: {
         'pasta-palete-yellow': '#FAF3D4',
