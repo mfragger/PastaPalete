@@ -9,7 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body>
+<body class="bg-black">
     <!--START OF NAVIGATION-->
     <div class="flex-col w-full">
         <div class="flex flex-col ">
@@ -44,13 +44,20 @@
                     </span>
                 </div>
             </div>
-            <div class="flex w-full py-8 pr-8 space-x-10 bg-pasta-palete-yellow pl-100px">
+            <div class="flex w-full p-8 space-x-10 lg:pr-8 bg-pasta-palete-yellow lg:pl-100px">
                 <p class="flex-1 text-justify">
                     Welcome to a gastronomic odyssey, an immersive journey that transcends the boundaries of time,
                     inviting you to delve into the intricacies of Pasta Palete's rich history, beliefs, and unwavering
                     commitment to culinary excellence. "Pasta Palete: Then and Now" beckons you to embark on a more
                     extended exploration, weaving through the centuries-old tales of pasta, the guiding principles
                     shaping our culinary beliefs, and the ceaseless pursuit of perfection propelling us into the future.
+
+                    <span class="block w-full md:hidden">
+                        <br />
+                        <br />    
+                        <img src="../images/About/pexels-klaus-nielsen-6287530.jpg"
+                            class="object-cover w-full h-36 object-center-n48px">
+                    </span>
 
                     <br />
                     <br />
@@ -92,6 +99,13 @@
                     table becomes a sacred space, echoing the belief that shared meals forge connections, and the
                     stories shared around it become an integral part of our identity.
 
+                    <span class="block w-full md:hidden">
+                        <br />
+                        <br />    
+                        <img src="../images/About/pexels-fauxels-3184184.jpg"
+                            class="object-cover w-full h-36 object-center-n48px">
+                    </span>
+                    
                     <br />
                     <br />
 
@@ -136,9 +150,16 @@
                     the opportunities presented by the ever-evolving culinary landscape. Our commitment is not just to
                     satisfy your palate today but to inspire and delight for years to come.
 
-                    <br />
-                    <br />
+                    <span class="block w-full md:hidden">
+                        <br />
+                        <br />    
+                        <img src="../images/About/pexels-klaus-nielsen-6287329.jpg"
+                            class="object-cover w-full h-36 object-center-n48px">
+                    </span>
 
+                    <br />
+                    <br />
+                    
                     <span class="font-semibold">
                         A Toast to the Future and Beyond:
                     </span>
@@ -157,7 +178,7 @@
                     odyssey of Pasta Palete. Thank you for being an integral part of our extended journey. Buon
                     Appetito!
                 </p>
-                <div class="flex flex-col flex-1 space-y-3">
+                <div class="flex-col flex-1 hidden space-y-3 md:flex">
                     <img src="../images/About/pexels-klaus-nielsen-6287530.jpg"
                         class="object-cover object-bottom w-auto h-32rem">
                     <img src="../images/About/pexels-fauxels-3184184.jpg"
@@ -166,8 +187,8 @@
                         class="object-cover object-center w-auto h-32rem">
                 </div>
             </div>
-            <div class="flex justify-center w-full p-8 space-x-10 bg-white">
-                <div class="flex justify-end flex-1">
+            <div class="flex justify-center w-full p-8 bg-white md:space-x-10">
+                <div class="justify-end flex-1 hidden md:flex">
                     <img src="../images/About/pexels-darina-belonogova-7959665.jpg"
                         class="object-cover object-right-top w-full h-full">
                 </div>
@@ -178,6 +199,8 @@
                     <span class="font-semibold text-pp-4xl">
                         Ms. Isabella De Luca
                     </span>
+                    <img src="../images/About/pexels-darina-belonogova-7959665.jpg"
+                        class="object-cover w-full h-56 object-center-n250px md:hidden">
                     <p>
                         In the intricate symphony of flavors that defines Pasta Palete, there is a maestro orchestrating
                         the culinary harmony, our esteemed Editor-in-Chief. A visionary at the helm, guiding the
@@ -321,10 +344,10 @@
     <!--START OF FOOTER-->
     <div class="bg-black">
         <div class="flex flex-col px-10 text-white divide-y-2 divide-white pb-7">
-            <div class="flex flex-col px-2 pt-10 pb-8 space-y-2 sm:flex-row sm:space-y-0">
-                <div class="flex flex-col self-start flex-1 space-y-1 sm:self-end">
+            <div class="flex flex-col px-2 pt-10 pb-8 space-y-4 md:flex-row md:space-y-0">
+                <div class="flex flex-col self-start flex-1 space-y-1 md:self-end">
                     <div class="w-full font-normal text-white bg-black font-source text-pp-3xl">
-                        <a href="../index.html">
+                        <a href="index.html">
                             Pasta Palete
                         </a>
                     </div>
@@ -337,26 +360,26 @@
                 </div>
                 <div class="flex space-x-32 text-pp-sm">
                     <div class="flex flex-col space-y-3">
-                        <label class="font-averia">
+                        <span class="font-averia">
                             MORE FROM PASTA PALETE
-                        </label>
+                        </span>
                         <div class="flex flex-col font-work text-pp-xsm">
-                            <a href="./cooking.html">
+                            <a href="./pages/cooking.html">
                                 COOKING
                             </a>
-                            <a href="./about.html">
+                            <a href="./pages/about.html">
                                 ABOUT
                             </a>
-                            <a href="./culture.html">
+                            <a href="./pages/culture.html">
                                 CULTURE
                             </a>
                         </div>
                     </div>
                     <div class="flex flex-col">
-                        <a href="./contact.html" class="font-averia">
+                        <a href="./pages/contact.html" class="font-averia">
                             CONTACT
                         </a>
-                        <a href="./contact.html#suggestionBox" class="font-work text-pp-xsm">
+                        <a href="./pages/contact.html#suggestionBox" class="font-work text-pp-xsm">
                             SUGGESTION BOX
                         </a>
                     </div>

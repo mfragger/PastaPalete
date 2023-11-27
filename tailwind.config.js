@@ -32,6 +32,7 @@ module.exports = {
       objectPosition: {
         'center-n48px': 'center -48px',
         'center-n225px': 'center -225px',
+        'center-n250px': 'center -250px',
         'center-n300px': 'center -300px',
         'bottom-p30px': 'bottom 30px'
       },
