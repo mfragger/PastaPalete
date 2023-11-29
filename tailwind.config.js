@@ -3,6 +3,9 @@ module.exports = {
   content: ["./**/*.html"],
   theme: {
     extend: {
+      backgroundImage:{
+        'spaghetti-laksa': "url('../images/Body3/max-griss-otLqpb9LK70-unsplash.jpg')",
+      },
       borderWidth: {
         "1":"1px",
       },
@@ -15,7 +18,7 @@ module.exports = {
         '571px': '571px',
         '611px': '611px',
         '651px': '651px',
-        '675px': '675px'
+        '675px': '675px',
       },
       maxHeight:{
         '571px': '571px',
@@ -28,6 +31,7 @@ module.exports = {
         '450px' : '450px',
         '460px' : '460px',
         '480px' : '480px',
+        '675px' : '675px',
       },
       objectPosition: {
         'center-n48px': 'center -48px',
