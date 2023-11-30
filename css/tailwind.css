@@ -831,8 +831,16 @@ video {
   background-image: url('../images/Body1/creamy-pesto-chicken-pasta-1-10.png');
 }
 
+.bg-farfalle-a-la-marinara{
+  background-image: url('../images/Body3/aleksandra-tanasiienko-0y6eMd8vevA-unsplash.jpg');
+}
+
 .bg-garlic-pasta-carbonara{
   background-image: url('../images/Body1/pexels-nadin-sh-16167168.jpg');
+}
+
+.bg-mushroom-alfredo{
+  background-image: url('../images/Body3/foodie-flavours-6cQeIG2J9nE-unsplash.jpg');
 }
 
 .bg-one-pot-lasagna{
@@ -847,28 +855,24 @@ video {
   background-image: url('../images/Body1/spaghetti-aglio-e-olio.jpg');
 }
 
-.bg-zucchini-lemon-spaghetti{
-  background-image: url('../images/Body1/Basically-ZucchiniPasta05.webp');
-}
-
-.bg-farfalle-a-la-marinara{
-  background-image: url('../images/Body3/aleksandra-tanasiienko-0y6eMd8vevA-unsplash.jpg');
-}
-
 .bg-vegan-spaghetti-carbonara{
   background-image: url('../images/Body3/bruna-branco-t8hTmte4O_g-unsplash.jpg');
+}
+
+.bg-zucchini-lemon-spaghetti{
+  background-image: url('../images/Body1/Basically-ZucchiniPasta05.webp');
 }
 
 .bg-cover{
   background-size: cover;
 }
 
-.bg-center{
-  background-position: center;
-}
-
 .bg-bottom{
   background-position: bottom;
+}
+
+.bg-center{
+  background-position: center;
 }
 
 .object-cover{
