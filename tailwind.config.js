@@ -5,6 +5,14 @@ module.exports = {
     extend: {
       backgroundImage:{
         'spaghetti-laksa': "url('../images/Body3/max-griss-otLqpb9LK70-unsplash.jpg')",
+        'chicken-pesto-pasta': "url('../images/Body1/creamy-pesto-chicken-pasta-1-10.png')",
+        'zucchini-lemon-spaghetti': "url('../images/Body1/Basically-ZucchiniPasta05.webp')",
+        'garlic-pasta-carbonara': "url('../images/Body1/pexels-nadin-sh-16167168.jpg')",
+        'one-pot-lasagna': "url('../images/Body1/healthier-skillet-lasagna-www.th.png')",
+        'tinapa-aglio-olio': "url('../images/Body1/spaghetti-aglio-e-olio.jpg')",
+        'farfalle-a-la-marinara': "url('../images/Body3/aleksandra-tanasiienko-0y6eMd8vevA-unsplash.jpg')",
+        'vegan-spaghetti-carbonara': "url('../images/Body3/bruna-branco-t8hTmte4O_g-unsplash.jpg')",
+        'mushroom-alfredo': "url('../images/Body3/foodie-flavours-6cQeIG2J9nE-unsplash.jpg')",
       },
       borderWidth: {
         "1":"1px",
