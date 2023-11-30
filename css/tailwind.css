@@ -538,6 +538,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.static{
+  position: static;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -937,9 +941,9 @@ video {
   padding-right: 0.5rem;
 }
 
-.px-52{
-  padding-left: 13rem;
-  padding-right: 13rem;
+.px-20{
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .py-12{
@@ -1184,6 +1188,10 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:block{
+    display: block;
+  }
+
   .md\:flex{
     display: flex;
   }
@@ -1226,6 +1234,10 @@ video {
 
   .md\:self-end{
     align-self: flex-end;
+  }
+
+  .md\:bg-none{
+    background-image: none;
   }
 }
 
@@ -1274,6 +1286,11 @@ video {
 
   .lg\:p-20{
     padding: 5rem;
+  }
+
+  .lg\:px-52{
+    padding-left: 13rem;
+    padding-right: 13rem;
   }
 
   .lg\:pl-100px{

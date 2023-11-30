@@ -9,7 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body>
+<body class="bg-black">
     <!--START OF NAVIGATION-->
     <div class="flex-col w-full">
         <div class="flex flex-col ">
@@ -29,30 +29,33 @@
     </div>
     <!--END OF NAVIGATION-->
     <!--START OF MAIN-->
-    <main>
+    <main class="bg-white">
         <div class="flex flex-col">
             <div class="flex w-full h-screen">
-                <div class="flex flex-col justify-center flex-1">
-                    <div class="self-center text-center text-white bg-pasta-palete-black w-14">
-                        Recipe
-                    </div>
-                    <span class="self-center font-semibold text-pp-4xl">
-                        Zucchini & Lemon Spaghetti
-                    </span>
-                    <span class="self-center text-pp-xl">
-                        Chef Sophia Marino
-                    </span>
-                    <div class="flex self-center ">
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
+                <div class="flex flex-col justify-center flex-1 md:bg-none bg-chicken-pesto-pasta">
+                    <div class="flex flex-col self-center p-10 bg-white">
+
+                        <div class="self-center text-center text-white bg-pasta-palete-black w-14">
+                            Recipe
+                        </div>
+                        <span class="self-center font-semibold text-pp-4xl">
+                            Zucchini & Lemon Spaghetti
+                        </span>
+                        <span class="self-center text-pp-xl">
+                            Chef Sophia Marino
+                        </span>
+                        <div class="flex self-center ">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
                     </div>
                 </div>
-                <div class="flex-1 bg-zucchini-lemon-spaghetti"></div>
+                <div class="flex-1 hidden bg-zucchini-lemon-spaghetti md:block"></div>
             </div>
-            <div class="flex flex-col self-center w-full space-y-2 px-52">
+            <div class="flex flex-col self-center w-full px-20 space-y-2 lg:px-52">
                 <div class="flex flex-col divide-y-2 divide-black">
                     <h1 class="mb-4 text-3xl font-bold">Zucchini & Lemon Spaghetti Recipe</h1>
 
