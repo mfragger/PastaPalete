@@ -542,6 +542,10 @@ video {
   position: static;
 }
 
+.absolute{
+  position: absolute;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -630,10 +634,6 @@ video {
   width: 3.5rem;
 }
 
-.w-460px{
-  width: 460px;
-}
-
 .w-64{
   width: 16rem;
 }
@@ -694,12 +694,6 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(2.5rem * var(--tw-space-x-reverse));
   margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-32 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(8rem * var(--tw-space-x-reverse));
-  margin-left: calc(8rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-5 > :not([hidden]) ~ :not([hidden]){
@@ -914,6 +908,11 @@ video {
      object-position: right top;
 }
 
+.object-top{
+  -o-object-position: top;
+     object-position: top;
+}
+
 .p-10{
   padding: 2.5rem;
 }
@@ -944,11 +943,6 @@ video {
 .px-20{
   padding-left: 5rem;
   padding-right: 5rem;
-}
-
-.py-1{
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .py-12{
@@ -1162,6 +1156,18 @@ video {
 
   .sm\:flex-row{
     flex-direction: row;
+  }
+
+  .sm\:space-x-32 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(8rem * var(--tw-space-x-reverse));
+    margin-left: calc(8rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .sm\:space-x-8 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .sm\:space-y-0 > :not([hidden]) ~ :not([hidden]){
