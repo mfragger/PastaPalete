@@ -22,6 +22,7 @@ module.exports = {
         '26rem': '26rem',
         '28rem': '28rem',
         '32rem': '32rem',
+        '55rem': '55rem',
         '300px': '300px',
         '571px': '571px',
         '611px': '611px',
@@ -46,7 +47,8 @@ module.exports = {
         'center-n225px': 'center -225px',
         'center-n250px': 'center -250px',
         'center-n300px': 'center -300px',
-        'bottom-p30px': 'bottom 30px'
+        'bottom-p30px': 'bottom 30px',
+        'top-n100px-left-50%': 'top -100px left 50%;'
       },
       fontFamily:{
         source:['source-serif-pro', 'serif'],
